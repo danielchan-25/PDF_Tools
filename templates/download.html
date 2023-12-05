@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+    <title>下载转换后的 PNG 文件</title>
+</head>
+<body>
+<h1>转换后的 PNG 文件</h1>
+{% if converted_files %}
+<ul>
+    {% for file in converted_files %}
+    <li><a href="{{ url_for('download_file', filename=file) }}" download>{{ file }}</a></li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>没有文件可下载。</p>
+{% endif %}
+</body>
+</html>
