@@ -53,3 +53,4 @@ urllib3==2.2.1
 uvicorn==0.29.0
 Werkzeug==3.0.2
 zipp==3.18.1
+setuptools==68.2.2
